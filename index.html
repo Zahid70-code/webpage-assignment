@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | GrandVista Community Hub</title>
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <audio id="bgAudio" loop>
+        <source src="audio1.mp3" type="audio/mpeg">
+    </audio>
+
+
+
+<!-- HEADER -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-2">
+
+        <!-- SMALL LOGO -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="Pictures/hotel.jpg" alt="GrandVista Logo" style="height:70px; width:auto; margin-right:20px;">
+            <span class="font-weight-bold">GrandVista Hub</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+         <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+         </li>
+
+         <!-- SERVICES DROPDOWN -->
+        <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown">
+        Services
+            </a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="events.html">Events</a>
+            <a class="dropdown-item" href="games.html">Games</a>
+            <a class="dropdown-item" href="sports.html">Sports</a>
+        </div>
+        </li>
+
+
+        <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="jobs.html">Jobs</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="staff.html">Staff</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="bar.html">Bar</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="wedding.html">Wedding</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="reference.html">References</a>
+        </li>
+
+    </ul>
+
+        </div>
+    </nav>
+</header>
+
+<!-- VIDEO HERO SECTION -->
+<section class="hero-video position-relative">
+    <video autoplay muted loop playsinline class="w-100 hero-video-file">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-text-right">
+    <h1>Welcome to GrandVista Community</h1>
+    <p>Your destination for events, sports, dining, and entertainment.</p>
+    <a href="wedding.html" class="btn btn-warning mt-3">Book Now</a>
+</div>
+
+</section>
+
+
+
+<!-- MAIN CONTENT -->
+<main class="container my-5">
+    <h2 class="text-center mb-4">Explore Our Services</h2>
+    <p class="text-center lead">Enjoy events, games, sports, and community experiences all in one place.</p>
+</main>
+
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-4">
+    <p>&copy; Copyright 2020. All Rights Reserved.</p>
+
+    <div>
+        <a href="https://www.facebook.com/" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com/" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.pinterest.com/" class="text-white mx-2"><i class="fab fa-pinterest"></i></a>
+    </div>
+</footer>
+
+<!-- JS FILES -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+
+<button onclick="document.getElementById('bgAudio').play()" 
+        style="
+            position:fixed; 
+            bottom:20px; 
+            right:20px; 
+            padding:10px 15px; 
+            background: rgba(255, 255, 255, 0.1); 
+            color:white; 
+            border: 1px solid white; 
+            border-radius:8px;
+            backdrop-filter: blur(6px);
+            font-weight: 500;
+        ">
+    Play Music
+</button>
+
+
+
+
+</body>
+</html>
