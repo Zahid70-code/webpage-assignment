@@ -22,12 +22,13 @@
 <body>
 
     <audio id="bgAudio" loop>
-        <source src="audio1.mp3" type="audio/mpeg">
+        <source src="Audio/audio1.mp3" type="audio/mpeg">
     </audio>
 
 
 
 <!-- HEADER -->
+ <!-- Navigation Bar Start-->
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-2">
 
@@ -101,10 +102,13 @@
     </nav>
 </header>
 
+ <!-- Navigation Bar End-->
+
+
 <!-- VIDEO HERO SECTION -->
 <section class="hero-video position-relative">
     <video autoplay muted loop playsinline class="w-100 hero-video-file">
-        <source src="video.mp4" type="video/mp4">
+        <source src="Video/video.mp4" type="video/mp4">
     </video>
 
     <div class="hero-text-right">
@@ -145,6 +149,8 @@
 <!-- Custom JS -->
 <script src="js/script.js"></script>
 
+ <!--Audio Button Start -->
+
 <button onclick="document.getElementById('bgAudio').play()" 
         style="
             position:fixed; 
@@ -161,6 +167,7 @@
     Play Music
 </button>
 
+ <!--Audio Button End -->
 
 
 
